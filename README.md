@@ -37,27 +37,27 @@ Thankfully the prometheus community already has a [ready made Helm chart](https:
 
 In this directory you'll see that we have taken a copy of the **kube-prometheus-stack** Helm chart which includes all the required setup for the prometheus stack. 
 
-Open up ArgoCD in your browser - [this link should work](https://127.0.0.1:9000/applications) if you've configured the port-forwarding.
+- Open up ArgoCD in your browser - [this link should work](https://127.0.0.1:9000/applications) if you've configured the port-forwarding.
 
-Click on **New App** shown in the top left of the screen.
+- Click on **New App** shown in the top left of the screen.
 
-Enter **kube-prometheus-stack** for the **application name**
+- Enter **kube-prometheus-stack** for the **application name**
 
-Choose **default** for the **project**
+- Choose **default** for the **project**
 
-You can leave the **Sync Policy** and **Sync Options** as defined.
+- You can leave the **Sync Policy** and **Sync Options** as defined.
 
-Enter **https://github.com/techreturners/devops-upskill-monitoring-logging.git** for the **Repository URL**
+- Enter **https://github.com/techreturners/devops-upskill-monitoring-logging.git** for the **Repository URL**
 
-Choose the **kube-prometheus-stack** option for the **stack**
+- Choose the **kube-prometheus-stack** option for the **stack**
 
-Choose the **https://kubernetes.default.svc** for the **Cluster URL**
+- Choose the **https://kubernetes.default.svc** for the **Cluster URL**
 
-Enter **default** for the **Namespace**
+- Enter **default** for the **Namespace**
 
-The **Helm** section can all be left as default
+- The **Helm** section can all be left as the default settings
 
-Then click the **Create** button shown towards to top of the dialog you are viewing
+-  Then click the **Create** button shown towards to top of the dialog you are viewing
 
 Argo will take a moment before going back to the **Applications** screen where you will see a new application called **kube-prometheus-stack**
 

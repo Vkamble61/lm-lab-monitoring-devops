@@ -63,6 +63,20 @@ Argo will take a moment before going back to the **Applications** screen where y
 
 Now you can click the **Sync** button followed by **Synchronize** to deploy the full prometheus stack across your cluster.
 
+After a few moments you should be able to see prometheus pods running on your cluster by running `kubectl get pods` which should output something similar to:
+
+```
+NAME                                                     READY   STATUS    RESTARTS   AGE
+alertmanager-kube-prom-stack-kube-prome-alertmanager-0   2/2     Running   0          2m50s
+kube-prom-stack-grafana-857f644995-nm5l4                 2/2     Running   0          3m2s
+kube-prom-stack-kube-prome-operator-6479d4b85b-ftglr     1/1     Running   0          3m2s
+kube-prom-stack-kube-state-metrics-cb9c4759f-t962s       1/1     Running   0          3m2s
+kube-prom-stack-prometheus-node-exporter-59gjl           1/1     Running   0          3m3s
+kube-prom-stack-prometheus-node-exporter-glf2q           1/1     Running   0          3m3s
+kube-prom-stack-prometheus-node-exporter-t8mnz           1/1     Running   0          3m3s
+prometheus-kube-prom-stack-kube-prome-prometheus-0       2/2     Running   1          2m44s
+```
+
 
 
 

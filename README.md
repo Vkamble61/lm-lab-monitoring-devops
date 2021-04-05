@@ -76,7 +76,47 @@ kube-prom-stack-prometheus-node-exporter-glf2q           1/1     Running   0    
 kube-prom-stack-prometheus-node-exporter-t8mnz           1/1     Running   0          3m3s
 prometheus-kube-prom-stack-kube-prome-prometheus-0       2/2     Running   1          2m44s
 ```
+### Step 2 - Accessing and playing with Grafana
 
+The purpose of Prometheus is to record metrics but we need a UI tool to provide charts and visuals of those metrics we record.
+
+That is where [Grafana](https://grafana.com/) comes in to help.
+
+The previous kubernetes stack also deployed Grafana for us.
+
+We can access it now by utilising port forwarding again.
+
+Open up a new terminal and run
+
+```
+kubectl port-forward svc/kube-prom-stack-grafana 9001:80
+```
+
+Then if you open up [http://127.0.0.1:9001](http://127.0.0.1:9001) you should see the Grafana homepage.
+
+It will ask you to log in, the default setup uses the following credentials:
+
+**Username:** admin 
+
+**Password:** prom-operator
+
+You should see an image similar to the following:
+
+![grafana dashboard](./docs/images/grafana-dashboard.png "Grafana Dashboard")
+
+### Step 3 - Reviewing the pre-built dashboards
+
+The kube-prometheus-stack comes with a few pre-built dashboards for us.
+
+Lets take a look at the monitoring we have on a Node level. A **node** being a server (machine) that forms part of our Kubernetes cluster.
+
+On the left hand side menu, hover of the **Dashboards** icon and click **Manage**.
+
+![grafana dashboard manage menu](./docs/images/grafana-dashboard-menu.png "Grafana Menu")
+
+Scroll down on the manage screen until you see **Nodes** and click to see the dashboard.
+
+Here you can see charts observing the information from your nodes such as **Memory Usage**, **Network Traffic** and **CPU Usage**
 
 
 

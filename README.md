@@ -41,6 +41,10 @@ Now you've explored the deployment of Prometheus, lets add some custom monitorin
 
 Head over to the [instrumentation documentation](./docs/INSTRUMENTATION.md) for instructions and information on this.
 
+### Step 3 - Informing Prometheus
+
+GitOps changes here....
+
 
 
 

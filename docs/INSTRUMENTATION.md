@@ -6,6 +6,8 @@ It also supports a variety of 3rd party applications such as MySQL, MongoDB, Git
 
 The devops-bookstore-api is a Python based application and thankfully there is a [Python Flask Prometheus exporter](https://pypi.org/project/prometheus-flask-exporter/).
 
+The instrumentation we are going to add allows the various [Prometheus metric types](https://prometheus.io/docs/concepts/metric_types/).
+
 NOTE: 
 
 All the changes covered in this guide can be seen via this repository comparison.

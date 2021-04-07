@@ -1,6 +1,3 @@
-
-
-
 # Introduction
 
 The guide below walks you through deploying the [Prometheus monitoring](https://prometheus.io/) stack.

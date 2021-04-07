@@ -43,7 +43,9 @@ Head over to the [instrumentation documentation](./docs/INSTRUMENTATION.md) for 
 
 ### Step 3 - Informing Prometheus
 
-GitOps changes here....
+Next we need to tell Prometheus that we have some new metrics that we'd like it to utilise.
+
+Head over to the [service monitoring documentation](./docs/SERVICEMONITORING.md) for instructions and information on this.
 
 
 

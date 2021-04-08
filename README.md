@@ -63,7 +63,7 @@ To tear things down and shut things off make sure to
 * Delete the kube-prometheus app using ArgoCD
 * Run `terraform destroy`
 
-## FAQ's and Trouble Shooting
+## FAQ's and Troubleshooting
 
 **After adding the service monitor definition, my book store is now failing to deploy**
 

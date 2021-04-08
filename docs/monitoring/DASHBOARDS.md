@@ -26,19 +26,19 @@ It will ask you to log in, the default setup uses the following credentials:
 
 Once you're on the Dashboard screen, hover over the Dashboards menu icon and click **Manage**
 
-![grafana dashboard manage menu](./images/grafana-dashboard-menu.png "Grafana Menu")
+![grafana dashboard manage menu](../images/grafana-dashboard-menu.png "Grafana Menu")
 
 Then click the **New Dashboard** button.
 
 You should see something similar to the following:
 
-![grafana dashboard new pane](./images/grafana_dashboard_new.png "Grafana New Dashboard")
+![grafana dashboard new pane](../images/grafana_dashboard_new.png "Grafana New Dashboard")
 
 ### Step 3 - Add an App Info Panel
 
 Click on the **Add new panel** button and then follow this short video (click on **View Raw** to download it) for creating your dashboard.
 
-[Custom Dashboard Creation](./videos/custom_dashboard.mp4)
+[Custom Dashboard Creation](../videos/custom_dashboard.mp4)
 
 Once you've got your custom dashboard created make sure to take a screenshot and share that as your assignment submission in Google classroom.
 

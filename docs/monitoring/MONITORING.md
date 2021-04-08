@@ -77,7 +77,7 @@ It will ask you to log in, the default setup uses the following credentials:
 
 You should see an image similar to the following:
 
-![grafana dashboard](./images/grafana-dashboard.png "Grafana Dashboard")
+![grafana dashboard](../images/grafana-dashboard.png "Grafana Dashboard")
 
 ### Step 3 - Reviewing the pre-built dashboards
 
@@ -87,7 +87,7 @@ Lets take a look at the monitoring we have on a Node level. A **node** being a s
 
 On the left hand side menu, hover of the **Dashboards** icon and click **Manage**.
 
-![grafana dashboard manage menu](./images/grafana-dashboard-menu.png "Grafana Menu")
+![grafana dashboard manage menu](../images/grafana-dashboard-menu.png "Grafana Menu")
 
 Scroll down on the manage screen until you see **Nodes** and click to see the dashboard.
 

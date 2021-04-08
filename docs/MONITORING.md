@@ -16,7 +16,7 @@ In this directory you'll see that we have taken a copy of the **kube-prometheus-
 
 - Click on **New App** shown in the top left of the screen.
 
-- Enter **kube-prometheus-stack** for the **application name**
+- Enter **kube-prom-stack** for the **application name**
 
 - Choose **default** for the **project**
 
@@ -24,7 +24,7 @@ In this directory you'll see that we have taken a copy of the **kube-prometheus-
 
 - Enter **https://github.com/techreturners/devops-upskill-monitoring-logging.git** for the **Repository URL**
 
-- Choose the **kube-prometheus-stack** option for the **stack**
+- Choose the **kube-prometheus-stack** option for the **Path**
 
 - Choose the **https://kubernetes.default.svc** for the **Cluster URL**
 

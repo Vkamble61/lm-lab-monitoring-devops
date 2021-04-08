@@ -45,7 +45,7 @@ You should see something similar to the following:
 
 ### Step 3 - Add an App Info Panel
 
-Click on the **Add new panel** button and then follow this short video for creating your dashboard.
+Click on the **Add new panel** button and then follow this short video (click on **View Raw** to download it) for creating your dashboard.
 
 [Custom Dashboard Creation](./videos/custom_dashboard.mp4)
 

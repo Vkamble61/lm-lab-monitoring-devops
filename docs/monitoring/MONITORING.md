@@ -93,7 +93,7 @@ Scroll down on the manage screen until you see **Nodes** and click to see the da
 
 Here you can see charts observing the information from your nodes such as **Memory Usage**, **Network Traffic** and **CPU Usage**
 
-Now that you've got Kubernetes installed, head [back to the README](../README.md) move onto the next step which is to instrument your application.
+Now that you've got Kubernetes installed, head [back to the next step](./INSTRUCTIONS.md) and move onto instrumenting your application.
 
 
 

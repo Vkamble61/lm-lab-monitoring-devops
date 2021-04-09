@@ -42,7 +42,7 @@ Click on the **Add new panel** button and then follow this short video (click on
 
 Once you've got your custom dashboard created make sure to take a screenshot and share that as your assignment submission in Google classroom.
 
-Marvel at all your ops skills and head back to the [README for information on tearing things](../README.md) down and saving on costs!
+Marvel at all your ops skills and head back to the [README for information on tearing things](../../README.md) down and saving on costs!
 
 
 

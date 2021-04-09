@@ -81,7 +81,7 @@ So now you can commit those changes to your forked GitOps repository.
 
 After a few moments ArgoCD will spot that it is out of Sync. If you click Sync it should then synchronise and re-deploy your application along with the updates to the service labelling and new service monitor.
 
-Now lets head back to the [final part and create some new custom dashboards](../README.md)!
+Now lets head back to the [final part and create some new custom dashboards](./INSTRUCTIONS.md)!
 
 
 

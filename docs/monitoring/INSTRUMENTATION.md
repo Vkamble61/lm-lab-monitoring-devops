@@ -72,4 +72,4 @@ kubectl get services
 
 And go to http://SERVICE_ADDRESS:5000/metrics to see those Prometheus metrics that you could see in Step 3.
 
-Once verified you can head [back to the README](../README.md) where we'll work through informing Prometheus about the new metrics your exposing.
+Once verified you can head [back to the next step](./INSTRUCTIONS.md) where we'll work through informing Prometheus about the new metrics your exposing.

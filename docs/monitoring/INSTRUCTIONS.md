@@ -26,24 +26,6 @@ Head over to the [service monitoring documentation](./SERVICEMONITORING.md) for 
 
 Continuing with your operations hat lets visualise those metrics you've added and head over to the [instructions for creating some custom dashboards](./DASHBOARDS.md).
 
-### Step 5 - Tearing things down
-
-To tear things down and shut things off make sure to
-
-* Delete the devops-bookstore-api app using ArgoCD
-* Delete the kube-prometheus app using ArgoCD
-* Run `terraform destroy`
-
-## FAQ's and Troubleshooting
-
-**After adding the service monitor definition, my book store is now failing to deploy**
-
-The servicemonitor.yaml file requires a Kubernetes Custom Resource Definition. This gets created when the Prometheus stack is deployed to your cluster. Firstly make sure you have deployed the prometheus stack. Also check the indentation of your YAML files.
-
-**It says my ArgoCD password is incorrect**
-
-There are two ways of obtaining the password. Make sure to try both ways. Also note if you see a '%' sign at the end of the password, this just denotes the end of the line and isn't part of the actual password.
-
 
 
 

@@ -39,7 +39,7 @@ Head over to the [monitoring instructions](./docs/monitoring/INSTRUCTIONS.md) to
 
 Now you can increase observability by introducing FluentD for centralised logging.
 
-Head over to the [centralised logging instructions](./docs/logging/INSTRUCTIONS.md) to get FluentD setup.
+This section is coming soon....
 
 ### Tearing things down
 

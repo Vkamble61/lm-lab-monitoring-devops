@@ -16,7 +16,7 @@ In this directory you'll see that we have taken a copy of the **kube-prometheus-
 
 - Click on **New App** shown in the top left of the screen.
 
-- Enter **kube-prom-stack** for the **application name**
+- Enter **kube-prometheus-stack** for the **application name**
 
 - Choose **default** for the **project**
 

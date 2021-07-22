@@ -11,7 +11,7 @@ If you go to [http://127.0.0.1:9001](http://127.0.0.1:9001) and it times out you
 If you do receive a timeout then simply restart your port forwarding by running:
 
 ```
-kubectl port-forward svc/kube-prom-stack-grafana 9001:80
+kubectl port-forward svc/kube-prometheus-stack-grafana 9001:80
 ```
 
 Then if you open up [http://127.0.0.1:9001](http://127.0.0.1:9001) you should see the Grafana homepage.

@@ -43,6 +43,8 @@ Head over to the [monitoring instructions](./docs/monitoring/INSTRUCTIONS.md) to
 
 ### Tearing things down
 
+💡 Don't forget to take any required screenshots before tearing things down
+
 To tear things down and shut things off make sure to
 
 * Delete the devops-bookstore-api app using ArgoCD

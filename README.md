@@ -1,6 +1,6 @@
 # Observability with Monitoring and Logging 
 
-This repository contains the instructions for getting [Prometheus monitoring](https://prometheus.io/) set up on your cluster and centralised logging configured using [Fluentd](https://www.fluentd.org/)
+This repository contains the instructions for getting [Prometheus monitoring](https://prometheus.io/) set up on your cluster.
 
 ## Instructions
 
@@ -15,7 +15,7 @@ This repository contains the instructions for getting [Prometheus monitoring](ht
 #### Supporting notes on pre-requisites
 
 * Provisioning cluster: If you need a reminder on how to provision the cluster you can follow through the instructions on these links:
-    * Amazon EKS [Instructions](https://github.com/techreturners/devops-upskill-eks-terraform/tree/session-004-gitops#readme)
+    * Amazon EKS [Instructions](https://github.com/techreturners/lm-lab-eks-terraform-devopsupskill/blob/main/README.md)
     * Google GKE [Instructions](https://github.com/techreturners/devops-upskill-gke-terraform/tree/session-004-gitops#readme)
     * Azure AKS [Instructions](https://github.com/techreturners/devops-upskill-aks-terraform/tree/session-004-gitops#readme)
 
@@ -34,12 +34,6 @@ From this point onwards the instructions will assume the following:
 First we'll get the Prometheus stack deployed to your cluster.
 
 Head over to the [monitoring instructions](./docs/monitoring/INSTRUCTIONS.md) to get prometheus set up and instrumenting your devops-bookstore-api.
-
-### Centralised logging - Configuring FluentD
-
-Now you can increase observability by introducing FluentD for centralised logging.
-
-This section is coming soon....
 
 ### Tearing things down
 

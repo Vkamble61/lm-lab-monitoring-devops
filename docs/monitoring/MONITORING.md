@@ -16,13 +16,13 @@ In this directory you'll see that we have taken a copy of the **kube-prometheus-
 
 - Click on **New App** shown in the top left of the screen.
 
-- Enter **kube-prometheus-stack** for the **application name**
+- Enter **kube-prometheus-stack** for the **application name** (NOTE: The name is important that you enter it as shown because the config uses this name for service discovery )
 
 - Choose **default** for the **project**
 
 - You can leave the **Sync Policy** and **Sync Options** as defined.
 
-- Enter **https://github.com/techreturners/devops-upskill-monitoring-logging.git** for the **Repository URL**
+- Enter **https://github.com/techreturners/lm-lab-monitoring-devops** for the **Repository URL**
 
 - Choose the **kube-prometheus-stack** option for the **Path**
 
@@ -42,14 +42,14 @@ After a few moments you should be able to see prometheus pods running on your cl
 
 ```
 NAME                                                     READY   STATUS    RESTARTS   AGE
-alertmanager-kube-prom-stack-kube-prome-alertmanager-0   2/2     Running   0          2m50s
-kube-prom-stack-grafana-857f644995-nm5l4                 2/2     Running   0          3m2s
-kube-prom-stack-kube-prome-operator-6479d4b85b-ftglr     1/1     Running   0          3m2s
-kube-prom-stack-kube-state-metrics-cb9c4759f-t962s       1/1     Running   0          3m2s
-kube-prom-stack-prometheus-node-exporter-59gjl           1/1     Running   0          3m3s
-kube-prom-stack-prometheus-node-exporter-glf2q           1/1     Running   0          3m3s
-kube-prom-stack-prometheus-node-exporter-t8mnz           1/1     Running   0          3m3s
-prometheus-kube-prom-stack-kube-prome-prometheus-0       2/2     Running   1          2m44s
+alertmanager-kube-prometheus-stack-kube-prome-alertmanager-0   2/2     Running   0          2m50s
+kube-prometheus-stack-grafana-857f644995-nm5l4                 2/2     Running   0          3m2s
+kube-prometheus-stack-kube-prome-operator-6479d4b85b-ftglr     1/1     Running   0          3m2s
+kube-prometheus-stack-kube-state-metrics-cb9c4759f-t962s       1/1     Running   0          3m2s
+kube-prometheus-stack-prometheus-node-exporter-59gjl           1/1     Running   0          3m3s
+kube-prometheus-stack-prometheus-node-exporter-glf2q           1/1     Running   0          3m3s
+kube-prometheus-stack-prometheus-node-exporter-t8mnz           1/1     Running   0          3m3s
+prometheus-kube-prometheus-stack-kube-prome-prometheus-0       2/2     Running   1          2m44s
 ```
 ### Step 2 - Accessing and playing with Grafana
 
@@ -64,7 +64,7 @@ We can access it now by utilising port forwarding again.
 Open up a new terminal and run
 
 ```
-kubectl port-forward svc/kube-prom-stack-grafana 9001:80
+kubectl port-forward svc/kube-prometheus-stack-grafana 9001:80
 ```
 
 Then if you open up [http://127.0.0.1:9001](http://127.0.0.1:9001) you should see the Grafana homepage.

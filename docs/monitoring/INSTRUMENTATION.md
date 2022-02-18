@@ -10,11 +10,11 @@ The instrumentation we are going to add allows the various [Prometheus metric ty
 
 NOTE: 
 
-All the changes covered in this guide can be seen via this repository comparison.
-
-[https://github.com/techreturners/devops-bookstore-api/compare/session-005-cicd...session-006-monitoring](https://github.com/techreturners/devops-bookstore-api/compare/session-005-cicd...session-006-monitoring)
-
 Don't forget the changes we'll be covering here should be applied to your forked version of this repository.
+
+Also all the changes we are making can be seen on this sample repository
+
+https://github.com/techreturners/lm-lab-instrumented-devops-bookstore-api
 
 ### Step 1 - Adding the dependency
 
@@ -24,7 +24,19 @@ Firstly add the following line into your Python dependencies in the **Pipfile**.
 prometheus-flask-exporter = "*"
 ```
 
-### Step 2 - Instrumenting the code
+### Step 2 - Ensure the pipfile also includes the dependency.
+
+Python manages its dependencies using a combination of the Pipfile and the Pipfile.lock. The lock file locks the versions so we need to also update the lock file.
+
+Replace your current Pipfile.lock with the contents from the sample repository
+
+https://github.com/techreturners/lm-lab-instrumented-devops-bookstore-api/blob/main/Pipfile.lock
+
+### Step 3 - Instrumenting the code
+
+**TIP:** You can see these changes in full on the sample repository
+
+https://github.com/techreturners/lm-lab-instrumented-devops-bookstore-api/blob/main/api.py
 
 Add the required import at the top of the **api.py** file
 
@@ -40,7 +52,24 @@ metrics = RESTfulPrometheusMetrics(app, api)
 metrics.info('app_info', 'Application info', version='1.0', app_name='devops-bookstore-api')
 ```
 
-The final step is to decorate the `get` method (which invoked when an API request is made to get books) with some prometheus metrics
+The final step is to decorate the `get` method (which invoked when an API request is made to get books) with some prometheus metrics.
+
+Add the following line above the `get` method:
+
+```
+@metrics.summary('requests_by_status', 'Request latencies by status', labels={'status': lambda r: r.status_code})
+```
+
+And also include the status code in the response:
+
+```
+return {
+        "books": [marshal(book, bookFields) for book in books]
+    }, 200
+```
+
+So it should look like:
+
 
 ```
 @metrics.summary('requests_by_status', 'Request latencies by status', labels={'status': lambda r: r.status_code})
@@ -50,17 +79,19 @@ def get(self):
     }, 200
 ```
 
-### Step 3 - Testing locally
-
-If you are able to run the backend API locally (by either Docker or the Python command) you should now be able to visit [http://127.0.0.1:5000/metrics](http://127.0.0.1:5000/metrics) and see a list of the Prometheus metrics now being made available for prometheus to scrape.
-
 ### Step 4 - Commit, Push and Deploy
 
 Now that the code is instrumented you can commit and push your code to your forked repository.
 
 If you have setup CircleCI it will build and push your docker image.
 
-You'll then need to update ArgoCD to deploy the new docker image to your cluster. (Replacing the old one)
+Or alternatively you can push the image up manually - remember to give the image a new tag (version) when you build and push it.
+
+You'll then need to update ArgoCD to deploy the new docker image to your cluster by updating the tag in the **values.yaml** of your GitOps repo.
+
+Remember to utilise ArgoCD to **Synchronize** the state across the cluster.
+
+**TIP:** If you're having trouble accessing the ArgoCD dashboard, sometimes the port-forwarding can timeout. You can Ctrl+C to cancel the existing port-forwarding and then re-run the command.
 
 ### Step 5 - Verify that new version is deployed
 

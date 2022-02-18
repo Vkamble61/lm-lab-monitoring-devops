@@ -8,10 +8,6 @@ Service monitors are created by the CoreOS team and are a Kubernetes [Custom Res
 
 NOTE: 
 
-All the changes covered in this guide can be seen via this repository comparison.
-
-[https://github.com/techreturners/devops-upskill-gitops/compare/pre-session-005-frontend-deployment...session-006-prometheus](https://github.com/techreturners/devops-upskill-gitops/compare/pre-session-005-frontend-deployment...session-006-prometheus)
-
 Don't forget the changes we'll be covering here should be applied to your forked version of the GitOps repository.
 
 ### Step 1 - Labelling the service

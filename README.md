@@ -18,9 +18,9 @@ This repository contains the instructions for getting [Prometheus monitoring](ht
 In order to get your monitoring setup we're going to have to get your Kubernetes cluster up and running again. So we've got quite a few things to work through first so let's get to it 🚀
 
 * Provisioning cluster, pushing image and utilsing ArgoCD: If you need a reminder on how to provision the cluster and manually push your Docker image, you can follow through the instructions on these links (Just remember to use your own repository for the bookstore-api and you can ignore the tearing down instructions in these links - we'll do that later):
-    * Amazon EKS [Instructions](https://github.com/techreturners/lm-lab-eks-terraform-devopsupskill/blob/main/README.md)
+    * Amazon EKS [Instructions](https://github.com/techreturners/lm-lab-eks-gitops-devopsupskill#readme)
     * Google GKE [Instructions](https://github.com/techreturners/devops-upskill-gke-terraform/tree/session-004-gitops#readme)
-    * Azure AKS [Instructions](https://github.com/techreturners/devops-upskill-aks-terraform/tree/session-004-gitops#readme)
+    * Azure AKS [Instructions](https://github.com/techreturners/lm-lab-aks-gitops-devopsupskill#readme)
 
 * (Optional) If you would prefer to utilise CircleCI for the building/pushing of the image part:
     * https://github.com/techreturners/lm-lab-cicd-devops-bookstore-api

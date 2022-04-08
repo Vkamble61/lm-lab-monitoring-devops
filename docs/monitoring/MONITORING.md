@@ -16,7 +16,7 @@ In this directory you'll see that we have taken a copy of the **kube-prometheus-
 
 - Click on **New App** shown in the top left of the screen.
 
-- Enter **kube-prometheus-stack** for the **application name** (NOTE: The name is important that you enter it as shown because the config uses this name for service discovery )
+- Enter **kube-prometheus-stack** for the **application name** (NOTE: The name is important. You must enter it as shown because the config uses this name for service discovery )
 
 - Choose **default** for the **project**
 
